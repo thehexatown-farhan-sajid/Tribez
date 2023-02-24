@@ -92,7 +92,7 @@ const CoverPageUser = () => {
 
   async function loadUserProfile() {
     const profiledata = await axios.get(
-      "http://localhost:8000/api/profiledata"
+      "https://tribez-nodejs.herokuapp.com/api/profiledata"
     );
 
     const dataarray = profiledata.data.data;
@@ -111,7 +111,7 @@ const CoverPageUser = () => {
         <div className="">
           <img
             className="cover-page-bg-image"
-            src={`http://localhost:8000/uploads/${profiles?.coverimage}`}
+            src={`https://tribez-nodejs.herokuapp.com/uploads/${profiles?.coverimage}`}
             alt="page-profile"
           />
         </div>
@@ -122,7 +122,7 @@ const CoverPageUser = () => {
               <div className="cover-profile-wrap">
                 <img
                   className="cover-profile"
-                  src={`http://localhost:8000/uploads/${profiles?.profileimage}`}
+                  src={`https://tribez-nodejs.herokuapp.com/uploads/${profiles?.profileimage}`}
                   alt="page-profile"
                 />
                 <div className="cover-alanwalk-wrap">
