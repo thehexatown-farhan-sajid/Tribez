@@ -1,0 +1,681 @@
+.nft-market-wrapper {
+  .nft-heading-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 30px;
+    .nft-heading {
+      margin: 40px 0px 0px 0px;
+      font-family: "Roboto";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      margin: 0px;
+      padding-left: 0px;
+    }
+    .listings {
+      font-family: "Roboto";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 0px;
+    }
+  }
+
+  .nft-sub-heading-detail {
+    margin: 0px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .nft-detail-all-market {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    .detail-market-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 10px;
+
+      overflow: scroll;
+
+      .market-list {
+        list-style-type: none;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+        padding: 10px 20px 10px 20px;
+        border-radius: 20px;
+        background: #dcdcdc;
+        cursor: pointer;
+      }
+      .market-list-unSelected {
+        list-style-type: none;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        background: #f7f7f7;
+        border-radius: 20px;
+      }
+    }
+    .detail-market-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .product-detail-wrapper {
+    margin-top: 10px;
+    height: 100%;
+    row-gap: 20px;
+    .video {
+      margin-top: 20px;
+      width: 100%;
+      height: 700px;
+      // background-image: url("../../bg/detail-video-img.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+
+      .detail-play-button {
+        // width: 94px;
+        // height: 94px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: white;
+        border-radius: 50%;
+        > img {
+          width: 546px;
+          // height: 94px;
+        }
+      }
+    }
+    .detail-wrapper {
+      height: 700px;
+      border: 0.5px solid rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 10px 25px 1px 25px;
+      margin-top: 20px;
+      .detail-top {
+        .detail-top-heading {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          > p {
+            font-family: "Roboto";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+          }
+          > img {
+            cursor: pointer;
+          }
+        }
+        .detail-second-heading {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 5px;
+          .detail-heading-by {
+            font-family: "Roboto";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.5);
+          }
+          .detail-heading-alanwalk {
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+          }
+          > img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .detail-mid-block {
+        background: #f7f7f7;
+        border-radius: 10px;
+        margin-top: 15px;
+        .detail-third-heading {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 50px 0px 50px;
+          border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+          > p {
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+        .detail-mid-top {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 40px 0px 30px;
+
+          .detail-mid-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .detail-eth-price {
+              font-family: "Roboto";
+              font-size: 26px;
+              font-style: normal;
+              font-weight: 500;
+            }
+            > img {
+              width: 18px;
+              height: 32px;
+              margin-right: 10px;
+            }
+          }
+          .detail-mid-right {
+            display: flex;
+            flex-direction: row;
+            color: rgba(62, 162, 255, 1);
+            justify-content: space-between;
+            align-items: flex-end;
+            > p {
+              font-family: "Roboto";
+              font-size: 26px;
+              font-style: normal;
+              font-weight: 500;
+              margin: 0px;
+              > span {
+                font-family: "Roboto";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.5);
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+        .placebid-button-wrap {
+          padding: 0px 30px 20px 30px;
+          .placebid-button {
+            width: 100%;
+            border: none;
+            margin-top: 20px;
+            background: linear-gradient(
+              94.05deg,
+              #f68fe0 0.97%,
+              #fab9ab 40.39%,
+              #fccb94 76.52%,
+              #ffde7e 106.09%
+            );
+            border-radius: 10px;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            padding: 10px;
+          }
+        }
+      }
+      .offers {
+        display: block;
+      }
+      .detail-bottom-block {
+        background: #f7f7f7;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .offers-wrap {
+          padding: 10px 0 10px 20px;
+
+          > p {
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0px;
+          }
+        }
+
+        .table-detail {
+          .table-heading {
+            height: 40px;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.45);
+            border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+            .price {
+              text-align: left;
+              padding-left: 15px;
+            }
+          }
+          .table-rows {
+            height: 40px;
+            border-top: 0.5px solid rgba(0, 0, 0, 0.25);
+            .img-price {
+              padding-left: 15px;
+              .eth-price {
+                margin-left: 10px;
+                font-family: "Roboto";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+              }
+            }
+            .price-usd {
+              text-align: center;
+              font-family: "Roboto";
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              color: rgba(0, 0, 0, 0.5);
+            }
+            .expiration {
+              text-align: center;
+              > p {
+                font-family: "Roboto";
+                font-size: 12px;
+                font-weight: 500;
+                margin: 0px;
+                > span {
+                  font-family: "Roboto";
+                  font-size: 10px;
+                  font-style: normal;
+                  font-weight: 400;
+                  color: rgba(0, 0, 0, 0.5);
+                  margin-right: 2px;
+                }
+              }
+            }
+            .from-name {
+              text-align: center;
+              font-family: "Roboto";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              color: rgba(62, 162, 255, 1);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .detail-wrapper-mobile {
+      display: none;
+    }
+    .description {
+      height: 35vh;
+
+      border: 0.5px solid rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin-top: 20px;
+      .description-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 0px 15px 25px;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+        > img {
+          margin-right: 20px;
+        }
+        > p {
+          margin: 0px;
+
+          font-family: "Roboto";
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+      .history-graph {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+        .graph-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 40px;
+
+          > canvas {
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+      }
+      > p {
+        color: rgba(0, 0, 0, 0.65);
+        padding: 35px;
+        font-family: "Roboto";
+        font-size: 0.83vw;
+        font-size: 1.7vh;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+    .offers-parent {
+      display: none;
+    }
+    .history {
+    }
+  }
+  .sugested-nfts {
+    margin: 30px 0px 30px 0px;
+    .sugested-nfts-first {
+      font-family: "Gilroy-Bold", sans-serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 800;
+      .sugested-nfts-second {
+        font-family: "Gilroy-Bold", sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 800;
+        color: rgba(255, 127, 98, 1);
+        margin-left: 5px;
+      }
+    }
+    .extraordinary-nfts {
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      margin-top: -15px;
+    }
+  }
+
+  .nft-market-cards {
+    margin-top: 5px;
+    .innerSlider {
+      column-gap: 15px;
+    }
+    .dotClass {
+      display: none;
+
+      .react-multi-carousel-dot button {
+        background-color: rgba(255, 158, 136, 0.25);
+        border: none;
+      }
+      .react-multi-carousel-dot--active button {
+        background-color: rgba(255, 158, 136, 0.45);
+        border: none;
+      }
+    }
+    .react-multiple-carousel__arrow--left {
+      background-color: #f2f2f2;
+      color: darkblue;
+      position: absolute;
+      left: 10px;
+      overflow: visible;
+    }
+    .react-multiple-carousel__arrow--right {
+      background-color: #f2f2f2;
+      position: absolute;
+      right: 10px;
+    }
+    .react-multiple-carousel__arrow::before {
+      color: #a4a4a4;
+    }
+    .detail-card-prod {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nft-market-wrapper {
+    padding: 10px;
+    .nft-heading-top {
+      padding-left: 10px;
+    }
+    .nft-sub-heading-detail {
+      padding-left: 10px;
+    }
+    .container {
+      padding: 0px;
+    }
+    .nft-detail-all-market {
+      padding-right: 0px;
+      overflow: scroll;
+      margin-right: 0px;
+      .detail-market-wrapper {
+        overflow: scroll;
+        padding-left: 10px;
+        padding-right: 0px;
+        .market-list {
+          padding: 5px 15px 5px 15px;
+        }
+        .market-list-unSelected {
+          padding: 5px 15px 5px 15px;
+        }
+      }
+      .market-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .product-detail-wrapper {
+      margin-top: 20px;
+      padding: 10px;
+      .video {
+        width: 100%;
+        height: 400px;
+        background-image: url("../../bg/browse-card.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .detail-play-button {
+          width: 60px;
+          height: 60px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          background: white;
+          border-radius: 50%;
+          > img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .detail-wrapper {
+        display: none;
+      }
+      .detail-wrapper-mobile {
+        display: block;
+        border: 0.5px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 10px;
+        .detail-top {
+          .detail-top-heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            > p {
+              font-family: "Roboto";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+            }
+            > img {
+              cursor: pointer;
+            }
+          }
+          .detail-second-heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 5px;
+            .detail-heading-by {
+              font-family: "Roboto";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 300;
+              color: rgba(0, 0, 0, 0.5);
+            }
+            .detail-heading-alanwalk {
+              font-family: "Roboto";
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 500;
+              color: rgba(0, 0, 0, 0.65);
+            }
+            > img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+        .placebid-button-wrap {
+          padding: 5px 0px 10px 0px;
+          .placebid-button {
+            width: 100%;
+            border: none;
+            margin-top: 20px;
+            background: linear-gradient(
+              94.05deg,
+              #f68fe0 0.97%,
+              #fab9ab 40.39%,
+              #fccb94 76.52%,
+              #ffde7e 106.09%
+            );
+            border-radius: 10px;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            padding: 10px;
+          }
+        }
+      }
+      .description {
+        height: auto;
+        .description-heading {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 10px 0px 10px 20px;
+          border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+          > img {
+            margin-right: 20px;
+          }
+          > p {
+            margin: 0px;
+
+            font-family: "Roboto";
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+        .history-graph {
+          padding: 20px 10px 20px 10px;
+          .graph-content {
+            width: 100%;
+          }
+        }
+        > p {
+          font-family: "Roboto";
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+      .offers-parnt {
+        margin-top: 30px;
+        .offers-parent {
+          display: block;
+          border: 0.5px solid rgba(0, 0, 0, 0.2);
+          box-sizing: border-box;
+          border-radius: 10px;
+        }
+      }
+    }
+    .sugested-nfts {
+      margin: 30px 0px 30px 10px;
+    }
+
+    .nft-market-cards {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      .innerSlider {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+    .nft-market-button-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 40px 0px 40px 0px;
+
+      .nft-market-button {
+        border: none;
+        background: linear-gradient(
+          94.05deg,
+          #f68fe0 0.97%,
+          #fab9ab 40.39%,
+          #fccb94 76.52%,
+          #ffde7e 106.09%
+        );
+        border-radius: 40px;
+        font-family: "Roboto";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        padding: 10px 25px 10px 25px;
+      }
+    }
+  }
+}

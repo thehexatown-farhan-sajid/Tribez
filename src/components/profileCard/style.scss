@@ -1,0 +1,128 @@
+.card-wrap {
+  background: #f8f8f8 !important;
+  border: 0.5px solid rgba(0, 0, 0, 0.5) !important;
+  box-sizing: border-box !important;
+  border-radius: 10px !important;
+  .card-img-wrapp {
+    position: relative;
+    .card-img {
+      width: 100%;
+      background-repeat: no-repeat;
+      object-fit: fill;
+      height: 220px;
+    }
+    .card-play-button {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      cursor: pointer;
+    }
+  }
+  .card-body {
+    padding: 0px;
+    .browseCardBottom {
+      .carDetail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 10px 0px 10px;
+        .cardLeft {
+          width: 60%;
+
+          .theWeeknd {
+            margin: 0px;
+            font-size: 15px;
+            line-height: 18px;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-family: "Roboto";
+          }
+          .walkerWraper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .bay {
+              font-size: 15px;
+              font-weight: 300;
+              color: #8480a0;
+              font-family: "Roboto";
+            }
+            .walkeMusic {
+              font-size: 15px;
+              font-weight: 500;
+              margin-left: 5px;
+              text-decoration: underline;
+              font-family: "Roboto";
+              color: rgba(0, 0, 0, 0.65);
+            }
+            > img {
+              margin-left: 5px;
+              width: 11px;
+              height: 11px;
+            }
+          }
+        }
+        .cardRight {
+          text-align: end;
+          width: 40%;
+          .etherumWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            color: black;
+            align-items: center;
+            margin-bottom: 5px;
+
+            > img {
+              width: 7px;
+              height: 12px;
+              margin-right: 3px;
+            }
+            .cont {
+              margin: 0px;
+              font-size: 12px;
+              font-weight: 700;
+              font-family: "Roboto";
+              margin-right: 0px;
+            }
+          }
+
+          .price {
+            margin: 0px;
+            font-size: 12px;
+            font-weight: 500;
+            font-style: normal;
+            font-family: "Roboto";
+          }
+        }
+      }
+      .buyNowC {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        font-family: "Roboto";
+
+        margin-top: -15px;
+        padding: 7px;
+        > span {
+          color: #2081e2;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 14px;
+        }
+        > img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

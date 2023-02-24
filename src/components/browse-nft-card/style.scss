@@ -1,0 +1,216 @@
+.card-wrap {
+  background: #f8f8f8 !important;
+  border: 0.5px solid rgba(0, 0, 0, 0.5) !important;
+  box-sizing: border-box !important;
+  border-radius: 10px !important;
+
+  .card-img-wrapp {
+    position: relative;
+    .card-imag {
+      width: 100%;
+      background-repeat: no-repeat;
+      object-fit: fill;
+      height: 220px;
+    }
+    .card-play-button {
+      position: absolute;
+      right: 10px;
+      bottom: 15px;
+      cursor: pointer;
+    }
+  }
+  .card-body-cont {
+    padding: 0px;
+    .browseCardBottom {
+      padding: 10px 15px 10px 15px;
+      .cardDetail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 10px !important;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+        .cardLeft {
+          width: 60%;
+
+          .theWeekend {
+            margin: 0px;
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 500;
+            font-family: "Roboto";
+            color: rgba(0, 0, 0, 0.9);
+          }
+          .walkerWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            // flex-wrap: wrap;
+            width: 70%;
+
+            .by {
+              font-size: 15px;
+              font-weight: 300;
+              color: rgba(0, 0, 0, 0.5);
+              font-family: "Roboto";
+            }
+            .walkerMusic {
+              margin-left: 4px;
+              color: rgba(0, 0, 0, 0.65);
+              // text-decoration: underline;
+              font-family: "Roboto";
+              font-size: 15px;
+              font-weight: 500;
+            }
+            > img {
+              margin-left: 5px;
+            }
+          }
+        }
+        .cardRight {
+          text-align: end;
+          width: 40%;
+          .etheriumWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            color: black;
+            align-items: center;
+            margin-bottom: 5px;
+
+            > img {
+              width: 9px;
+              height: 16px;
+              margin-right: 10px;
+            }
+            .count {
+              margin: 0px;
+              font-size: 17px;
+              font-weight: 700;
+              font-family: "Roboto";
+              line-height: 18px;
+              color: rgba(0, 0, 0, 1);
+            }
+          }
+
+          .price {
+            margin: 0px;
+            font-size: 11px;
+            font-weight: 500;
+            font-style: normal;
+            font-family: "Roboto";
+            line-height: 18px;
+            color: rgba(0, 0, 0, 0.75);
+          }
+        }
+      }
+      .browse-mid-line {
+        border: 0.1px solid rgba(0, 0, 0, 0.1);
+      }
+      .buyNow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-family: "Roboto";
+        font-size: 16px;
+        padding-top: 10px;
+
+        > span {
+          color: rgba(32, 129, 226, 1);
+          cursor: pointer;
+        }
+        > img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrap {
+    .card-img-wrapp {
+      position: relative;
+      .card-play-button {
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+        cursor: pointer;
+      }
+    }
+    .browseCardBottom {
+      .cardDetail {
+        padding-top: 5px;
+        .cardLeft {
+          .theWeekend {
+            margin: 0px;
+            font-size: 11px;
+            line-height: 18px;
+            font-weight: 500;
+            font-family: "Roboto";
+          }
+          .walkerWrapper {
+            display: none;
+            .by {
+              display: none;
+            }
+            .walkerMusic {
+              display: none;
+            }
+            > img {
+              display: none;
+            }
+          }
+        }
+        .cardRight {
+          .etheriumWrapper {
+            display: flex;
+            flex-direction: row;
+            color: black;
+            align-items: center;
+            margin-bottom: 5px;
+
+            > img {
+              width: 9px;
+              height: 12px;
+              margin-right: 2px;
+            }
+            .count {
+              margin: 0px;
+              font-size: 12px;
+              font-weight: 700;
+              font-family: "Roboto";
+              margin-right: 0px;
+            }
+          }
+          .price {
+            display: none;
+          }
+        }
+      }
+      .buyNow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-family: "Roboto";
+        font-size: 13px;
+        > span {
+          color: #2081e2;
+          cursor: pointer;
+        }
+        > img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

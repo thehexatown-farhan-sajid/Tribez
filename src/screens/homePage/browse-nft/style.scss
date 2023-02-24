@@ -1,0 +1,173 @@
+.topCollectionWrapper {
+  .sellersHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .topSellers {
+      font-family: "Gilroy-Bold", sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+    }
+    .sellersYear {
+      color: rgba(255, 127, 98, 1);
+      font-family: "Gilroy-Bold", sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+    > img {
+      margin-top: 5px;
+      cursor: pointer;
+    }
+    .browse-nft-content {
+      display: none;
+    }
+    > img:hover .browse-nft-content {
+      display: block;
+      width: 80px;
+      position: absolute;
+      text-align: center;
+      color: #fff;
+      padding: 10px 15px 10px 15px;
+      z-index: 1111;
+      background-color: white;
+      color: black;
+      margin-top: 50px;
+      box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.15);
+      > p {
+        cursor: pointer;
+      }
+    }
+  }
+  .sellExtraordinary {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px;
+  }
+  .BrowseCardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    .cardWrap {
+      padding: 20px 30px 20px 0px;
+    }
+  }
+  .browseButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .nftButton {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 15px;
+      border: none;
+      border-radius: 40px;
+      color: black;
+      padding: 12px 30px 12px 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background: linear-gradient(
+        94.05deg,
+        #f68fe0 0.97%,
+        #fab9ab 40.39%,
+        #fccb94 76.52%,
+        #ffde7e 106.09%
+      );
+    }
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .topCollectionWrapper {
+    margin-top: 4vh;
+    .sellersHeading {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .topSellers {
+        font-family: "Gilroy-Bold", sans-serif;
+        font-weight: 800;
+        font-size: 26px;
+      }
+      .sellersYear {
+        color: rgba(255, 127, 98, 1);
+        font-family: "Gilroy-Bold";
+        font-weight: 800;
+        font-size: 36px;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+      > img {
+        margin-top: 5px;
+        cursor: pointer;
+      }
+      .browse-nft-content {
+        display: none;
+      }
+      > img:hover .browse-nft-content {
+        display: block;
+        width: 80px;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        padding: 10px 15px 10px 15px;
+        z-index: 1111;
+        background-color: white;
+        color: black;
+        margin-top: 50px;
+        box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.15);
+        > p {
+          cursor: pointer;
+        }
+      }
+    }
+    .sellExtraordinary {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0px;
+    }
+    .BrowseCardWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      .cardWrap {
+        margin-bottom: 15px;
+        padding: 0px;
+      }
+    }
+    .browseButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .nftButton {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 15px;
+        border: none;
+        border-radius: 40px;
+        color: black;
+        padding: 10px 20px 10px 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background: linear-gradient(
+          94.05deg,
+          #f68fe0 0.97%,
+          #fab9ab 40.39%,
+          #fccb94 76.52%,
+          #ffde7e 106.09%
+        );
+      }
+    }
+  }
+}

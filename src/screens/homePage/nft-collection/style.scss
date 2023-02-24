@@ -1,0 +1,112 @@
+.nftCollectionWrapper {
+  margin-top: 10%;
+
+  .collectionNFT {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    text-align: left;
+  }
+  .discoverNFT {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .carouselWrapper {
+    .carouselItem {
+      // background-color: aqua;
+      // height: 380px;
+      // width: 290px;
+    }
+    .innerSlider {
+      column-gap: 15px;
+      margin-bottom: 50px;
+    }
+    .itemClass {
+    }
+    .containerClass {
+    }
+    .react-multi-carousel-item {
+      width: 0px;
+    }
+    .dotClass {
+      column-gap: 15px;
+
+      .react-multi-carousel-dot button {
+        background-color: rgba(255, 158, 136, 0.25);
+        border: none;
+      }
+      .react-multi-carousel-dot--active button {
+        background-color: rgba(255, 158, 136, 0.45);
+        border: none;
+      }
+    }
+    .react-multi-carousel-dot-list {
+      position: absolute;
+      bottom: 0px;
+    }
+    .react-multiple-carousel__arrow--left {
+      background-color: #f2f2f2;
+      position: absolute;
+      left: 10px;
+      overflow: visible;
+    }
+    .react-multiple-carousel__arrow--right {
+      background-color: #f2f2f2;
+      position: absolute;
+      right: 10px;
+    }
+    .react-multiple-carousel__arrow::before {
+      color: #a4a4a4;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nftCollectionWrapper {
+    .carouselWrapper {
+      .innerSlider {
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nftCollectionWrapper {
+    margin-top: 10%;
+    background-color: white;
+    .collectionNFT {
+      font-family: "Gilroy-Bold", sans-serif;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 800;
+      text-align: center;
+    }
+    .discoverNFT {
+      font-family: "Roboto";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+    }
+    .carouselWrapper {
+      .react-multiple-carousel__arrow--left {
+        background-color: #323232;
+        width: 28px;
+        height: 28px;
+      }
+      .react-multiple-carousel__arrow--right {
+        background-color: #323232;
+        width: 28px;
+        height: 28px;
+      }
+      .react-multiple-carousel__arrow::before {
+        color: #b1b1b1;
+      }
+    }
+  }
+}

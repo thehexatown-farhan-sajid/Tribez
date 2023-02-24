@@ -1,0 +1,157 @@
+.detail-bottom-block {
+  background: #f7f7f7;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  .offers-wrap {
+    padding: 10px 0 10px 20px;
+
+    > p {
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 0px;
+    }
+  }
+
+  .table-detail {
+    .table-heading {
+      height: 40px;
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.45);
+      border-top: 0.5px solid rgba(0, 0, 0, 0.3);
+      .price {
+        text-align: left;
+        padding-left: 15px;
+      }
+    }
+    .table-rows {
+      height: 40px;
+      border-top: 0.5px solid rgba(0, 0, 0, 0.25);
+      .img-price {
+        padding-left: 15px;
+        .eth-price {
+          margin-left: 10px;
+          font-family: "Roboto";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+      .price-usd {
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      .expiration {
+        text-align: center;
+        > p {
+          font-family: "Roboto";
+          font-size: 12px;
+          font-weight: 500;
+          margin: 0px;
+          > span {
+            font-family: "Roboto";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.5);
+            margin-right: 2px;
+          }
+        }
+      }
+      .from-name {
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: rgba(62, 162, 255, 1);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .detail-bottom-block {
+    background-color: transparent;
+    > p {
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 0px;
+    }
+    .table-detail {
+      .table-heading {
+        height: 40px;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.45);
+        border-top: 0.5px solid rgba(0, 0, 0, 0.5);
+        .price {
+          text-align: left;
+        }
+        .usd {
+          display: none;
+        }
+      }
+      .table-rows {
+        height: 40px;
+        border-top: 0.5px solid rgba(0, 0, 0, 0.25);
+        .img-price {
+          .eth-price {
+            margin-left: 10px;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+        .price-usd {
+          display: none;
+        }
+        .expiration {
+          text-align: center;
+          > p {
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            margin: 0px;
+            > span {
+              font-family: "Roboto";
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              color: rgba(0, 0, 0, 0.5);
+              margin-right: 2px;
+            }
+          }
+        }
+        .from-name {
+          text-align: center;
+          font-family: "Roboto";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          color: rgba(62, 162, 255, 1);
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

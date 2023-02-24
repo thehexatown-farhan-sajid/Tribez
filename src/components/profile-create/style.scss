@@ -1,0 +1,36 @@
+.formcontainer {
+  display: flex;
+  justify-content: center;
+}
+.formwrapper {
+  width: 50%;
+  flex-direction: column;
+  padding-bottom: 12px;
+  display: flex;
+}
+.inputform {
+  margin-top: 15px;
+  padding: 14px;
+}
+.button {
+  font: bold;
+  margin-top: 10px;
+  border: none;
+  background: linear-gradient(
+    94.05deg,
+    #f68fe0 0.97%,
+    #fab9ab 40.39%,
+    #fccb94 76.52%,
+    #ffde7e 106.09%
+  );
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.profileimage {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}

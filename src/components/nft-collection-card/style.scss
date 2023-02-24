@@ -1,0 +1,206 @@
+.nft-carousel-cards {
+  border-radius: 10px !important;
+  padding: 5px !important;
+
+  .cardImage {
+    position: relative;
+    .play-button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+  .collection-card-body {
+    padding: 10px 10px 0 10px;
+    .cardBotom {
+      color: white;
+      .cardDetail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5px;
+        border-bottom: 0.8px solid rgba(242, 234, 234, 0.5);
+        .cardLeft {
+          width: 70%;
+          .theWeekend {
+            margin: 0px;
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-family: "Roboto";
+            color: rgba(255, 255, 255, 0.9);
+          }
+          .walkerWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .by {
+              font-size: 11px;
+              font-weight: 300;
+              color: rgba(255, 255, 255, 0.5);
+              font-family: "Roboto";
+            }
+            .walkerMusic {
+              font-size: 11px;
+              font-weight: 500;
+              margin-left: 5px;
+              text-decoration: underline;
+              font-family: "Roboto";
+              color: rgba(255, 255, 255, 0.85);
+            }
+            > img {
+              margin-left: 5px;
+              width: 16px;
+              height: 14px;
+            }
+          }
+        }
+        .cardRight {
+          width: 30%;
+          text-align: end;
+          .etheriumWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 5px;
+
+            > img {
+              width: 9px;
+              height: 16px;
+              margin-right: 10px;
+            }
+            .count {
+              margin: 0px;
+              font-size: 17px;
+              font-weight: 700;
+              font-family: "Roboto";
+              margin-right: 0px;
+            }
+          }
+
+          .price {
+            margin: 0px;
+            font-size: 12px;
+            font-weight: 500;
+            font-style: normal;
+            font-family: "Roboto";
+            color: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+      .buyNow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+
+        font-family: "Roboto";
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nft-carousel-cards {
+    .collection-card-body {
+      .cardBotom {
+        .cardDetail {
+          .cardLeft {
+            .theWeekend {
+              margin: 0px;
+              font-size: 14px;
+              line-height: 18px;
+              margin-bottom: 5px;
+              font-weight: 500;
+              font-family: "Roboto";
+              color: rgba(255, 255, 255, 0.9);
+            }
+            .walkerWrapper {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+
+              .by {
+                font-size: 11px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.5);
+                font-family: "Roboto";
+              }
+              .walkerMusic {
+                font-size: 11px;
+                font-weight: 500;
+                margin-left: 5px;
+                text-decoration: underline;
+                font-family: "Roboto";
+                color: rgba(255, 255, 255, 0.85);
+              }
+              > img {
+                display: none;
+                margin-left: 5px;
+                width: 16px;
+                height: 14px;
+              }
+            }
+          }
+          .cardRight {
+            text-align: end;
+            .etheriumWrapper {
+              display: flex;
+              flex-direction: row;
+
+              align-items: center;
+              margin-bottom: 5px;
+
+              > img {
+                width: 9px;
+                height: 16px;
+                margin-right: 10px;
+              }
+              .count {
+                margin: 0px;
+                font-size: 17px;
+                font-weight: 700;
+                font-family: "Roboto";
+                margin-right: 0px;
+              }
+            }
+
+            .price {
+              margin: 0px;
+              font-size: 11px;
+              font-weight: 500;
+              font-style: normal;
+              font-family: "Roboto";
+              color: rgba(255, 255, 255, 0.75);
+            }
+          }
+        }
+        .buyNow {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+
+          font-family: "Roboto";
+          font-size: 16px;
+          color: white;
+          cursor: pointer;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

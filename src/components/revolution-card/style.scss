@@ -1,0 +1,116 @@
+.revolutionCard {
+  width: 387px;
+  height: 516px;
+  border-radius: 10px;
+  padding: 5px;
+  background: linear-gradient(146.56deg, #f8a4c5 1.01%, #fdd588 102.13%);
+
+  .cardImage {
+    position: relative;
+    height: 75%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../bg/revolution-card.svg");
+    border-radius: 10px;
+    .play-button {
+      position: absolute;
+      bottom: 20px;
+      right: 22px;
+      cursor: pointer;
+      > img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+  .cardBottom {
+    .cardDetail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 0.3px solid rgba(0, 0, 0, 0.1);
+      .cardLeft {
+        .theWeekend {
+          margin: 0px;
+          font-size: 16px;
+          line-height: 18px;
+          margin-bottom: 5px;
+          font-weight: 500;
+          font-family: "Roboto";
+        }
+        .walkerWrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          .by {
+            font-size: 11px;
+            font-weight: 300;
+            color: #7e5f54;
+            font-family: "Roboto";
+          }
+          .walkerMusic {
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 5px;
+            text-decoration: underline;
+            font-family: "Roboto";
+          }
+          > img {
+            margin-left: 5px;
+            width: 11px;
+            height: 11px;
+          }
+        }
+      }
+      .cardRight {
+        .etheriumWrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 5px;
+
+          > img {
+            width: 9px;
+            height: 16px;
+            margin-right: 10px;
+          }
+          .count {
+            margin: 0px;
+            font-size: 19px;
+            font-weight: 700;
+            font-family: "Roboto";
+          }
+        }
+
+        .price {
+          text-align: right;
+          margin: 0px;
+          font-size: 12px;
+          font-weight: 500;
+          font-style: normal;
+          font-family: "Roboto";
+        }
+      }
+    }
+    .buyNow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: "Roboto";
+      font-size: 16px;
+      padding-top: 10px;
+      cursor: pointer;
+      padding: 15px 0 15px 0;
+    }
+  }
+}

@@ -1,0 +1,311 @@
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(93.58deg, #f692db 0%, #fdd489 87.26%);
+  position: relative;
+  margin-top: 20px;
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-bottom: 70px;
+
+    .footerHeading {
+      font-family: "Roboto";
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding-top: 60px;
+    }
+    .latestNews {
+      font-family: "Roboto";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .inputGroup {
+      width: 37% !important;
+      height: 54px;
+      border-radius: 8px !important;
+      margin-top: 10px;
+      border: none !important;
+      .footer-input {
+        border: none;
+      }
+      .subscribeBtn {
+        background-color: white;
+        color: black;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        border-left: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+      }
+    }
+
+    .privacyPolicy {
+      width: 38%;
+      font-family: "Roboto";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-top: 40px;
+      .privacyNotice {
+        font-weight: bold;
+      }
+    }
+    .community {
+      font-family: "Roboto";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .checkCont {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      padding-top: 10px;
+      column-gap: 10px;
+      > Input {
+        width: 27px;
+        height: 27px;
+        border-radius: 5px;
+      }
+      > Label {
+        width: 95%;
+        margin: 0px;
+      }
+    }
+    .socialIconsWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .socialIconBox {
+        width: 53px;
+        height: 53px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.08);
+      }
+    }
+    .subscribeBtn {
+      background-color: white;
+      color: black;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      border-left: 0.5px solid rgba(0, 0, 0, 0.5) !important;
+    }
+  }
+  .footerBottom {
+    position: absolute;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 10px 0px;
+    bottom: 0px;
+    border-top: 0.7px solid rgba(0, 0, 0, 0.2);
+
+    .ozoneNetworks {
+      font-family: "Roboto";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .privacyPolicy {
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+    }
+    .termsOfServices {
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      margin-left: 20px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .footerWrapper {
+    .footer {
+      .footerHeading {
+        width: 75%;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 34px;
+        font-style: normal;
+      }
+      .latestNews {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        width: 65%;
+        color: rgba(0, 0, 0, 0.85);
+      }
+      .inputGroup {
+        width: 80% !important;
+        height: 44px;
+        border-radius: 8px !important;
+        margin-top: 10px;
+      }
+
+      .privacyPolicy {
+        width: 80%;
+        font-family: "Roboto";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .checkCont {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-evenly;
+        align-items: flex-start;
+        font-family: "Roboto";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        padding-top: 10px;
+        > Input {
+          width: 17px;
+          height: 17px;
+          border-radius: 5px;
+        }
+        > Label {
+          margin: 0px;
+        }
+      }
+      .socialIconsWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .socialIconBox {
+          width: 43px;
+          height: 43px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.08);
+          > img {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+      .subscribeBtn {
+        background-color: white;
+        color: black;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        text-align: left;
+      }
+    }
+    .footerBottom {
+      height: 40px;
+      position: absolute;
+      width: 97%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0px 5px 0px;
+      bottom: 0px;
+      border-top: 0.8px solid #866756;
+
+      .ozoneNetworks {
+        font-family: "Roboto";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .privacyPolicy {
+        font-family: Roboto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+      }
+      .termsOfServices {
+        font-family: Roboto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        margin-left: 20px;
+      }
+    }
+  }
+}

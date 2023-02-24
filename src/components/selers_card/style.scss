@@ -1,0 +1,149 @@
+.sellersCardBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 15px;
+  padding: 13px 20px 13px 20px;
+  width: 100%;
+
+  .count-no {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  > img {
+    margin-left: 10px;
+  }
+  .sellerCardDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .sellersLeft {
+      margin-left: 15px;
+      margin-top: 10px;
+      .sellersName {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0px;
+      }
+      .sellersColections {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 12px;
+        margin: 0px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .sellersRight {
+      margin-left: 1.5vw;
+      .etheriumWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        .count {
+          margin: 0px;
+          font-family: "Roboto";
+          font-weight: 700;
+          font-size: 20px;
+        }
+        > img {
+          margin-right: 12px;
+        }
+      }
+      .price {
+        text-align: right;
+        margin: 0px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 13px;
+        color: rgba(26, 184, 0, 1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sellersCardBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 15px;
+    padding: 13px 20px 13px 20px;
+    width: 100%;
+
+    .count-no {
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    > img {
+      margin-left: 10px;
+    }
+    .sellerCardDetail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .sellersLeft {
+        margin-left: 15px;
+        margin-top: 10px;
+        .sellersName {
+          font-family: "Roboto";
+          font-weight: 500;
+          font-size: 16px;
+          margin: 0px;
+        }
+        .sellersColections {
+          font-family: "Roboto";
+          font-weight: 400;
+          font-size: 12px;
+          margin: 0px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+      .sellersRight {
+        margin-left: 1.5vw;
+        .etheriumWrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          .count {
+            margin: 0px;
+            font-family: "Roboto";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 35px;
+          }
+          > img {
+            margin-right: 5px;
+          }
+        }
+        .price {
+          text-align: right;
+          margin: 0px;
+          font-family: "Roboto";
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 10px;
+          color: rgba(26, 184, 0, 1);
+        }
+      }
+    }
+  }
+}

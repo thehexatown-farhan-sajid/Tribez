@@ -1,0 +1,218 @@
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.maindiv2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Sale {
+  font-weight: bold;
+  font-size: 30px;
+}
+.chose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  column-gap: 12rem;
+}
+.chose2 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+.chose3 {
+  flex-direction: row;
+  margin-left: 8rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.fixed {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  border-width: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.pfixed {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 2rem;
+}
+.inputfix {
+  margin-top: 1rem;
+  width: 100%;
+  height: 20px;
+  border-width: 2px;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.inputauc {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.tauctio {
+  margin-top: 1rem;
+  width: 100%;
+  height: 20px;
+  border-width: 2px;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.reserve {
+  flex-direction: row;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+}
+.inputprice {
+  margin-top: 8px;
+  margin-left: 2rem;
+  width: 100%;
+  height: 60px;
+  border-width: 2px;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+}
+.timestemp {
+  margin-left: 4rem;
+  margin-top: 2rem;
+  font-size: 17px;
+  font-weight: bold;
+}
+.inputtimestemp {
+  margin-top: 8px;
+  margin-left: 2rem;
+  width: 100%;
+  height: 60px;
+  border-width: 2px;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.timestempend {
+  margin-left: 4rem;
+  margin-top: 2rem;
+  font-size: 17px;
+  font-weight: bold;
+}
+.inputtimestempend {
+  margin-top: 8px;
+  margin-left: 2rem;
+  width: 100%;
+  height: 60px;
+  border-width: 2px;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.btclass {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    94.05deg,
+    #f68fe0 0.97%,
+    #fab9ab 40.39%,
+    #fccb94 76.52%,
+    #ffde7e 106.09%
+  );
+  font-weight: bold;
+  color: white;
+  border: 2px;
+}
+.moreoption {
+  flex-direction: row;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+}
+.listing {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.listings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.listingprice {
+  font-size: 20px;
+  color: black;
+}
+.earning {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  justify-content: space-between;
+  border-top-width: 2px;
+}
+.pearning {
+  font-size: 25px;
+  color: black;
+}
+.ppearnig {
+  font-size: 20px;
+  color: black;
+  padding-top: 6px;
+}
+.imgdiv {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 350px;
+}
+.tid {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-width: 2px;
+}
+.spantag {
+  color: black;
+  padding-top: 1rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+.ethprice {
+  color: black;
+  padding-top: 8px;
+  margin-left: 2rem;
+  font-weight: bold;
+}

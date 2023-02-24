@@ -1,0 +1,481 @@
+.navbarWrapper {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  .logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > img {
+      cursor: pointer;
+    }
+    .tribez-line {
+      width: 33px;
+      border: 1px solid #555555;
+      transform: rotate(90deg);
+      margin: 0 20px 0 20px;
+      background-color: #555555;
+    }
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    > img {
+      width: 16px;
+      height: 27px;
+    }
+    > p {
+      margin: 0px;
+      margin-left: 10px;
+      margin-right: 20px;
+      color: black;
+      font-family: "Gilroy";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+    }
+  }
+  .navWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    .leftNav {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .searchBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1.3px solid #cccccc;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding: 5px 15px 5px 25px;
+        width: 100%;
+        height: 39px;
+        .searchInput {
+          outline: none;
+          border: none;
+          width: 90%;
+        }
+        .searchInput::placeholder {
+          color: rgba(198, 198, 198, 1);
+        }
+        > img {
+          margin-left: 5%;
+        }
+      }
+    }
+
+    .rightNav {
+      height: 100%;
+      padding-top: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 20px;
+      margin-right: 0px !important;
+      .wallet-wrapper {
+        height: 70px !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .dropdown-wallet {
+          .wallet {
+            height: 44px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid #ff887e;
+            padding: 5px 25px 5px 25px;
+            border-radius: 48px;
+            cursor: pointer;
+
+            > img {
+              width: 17px;
+              height: 17px;
+            }
+            .walletText {
+              margin-left: 10px;
+              font-family: "Roboto";
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+          .wallet-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 15px;
+            .contents {
+              background-color: #f6f6f6;
+              margin-bottom: 10px;
+              border-radius: 10px;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+              padding: 10px 0px 10px 20px;
+              cursor: pointer;
+              .wallet-name {
+                margin-left: 20px;
+                font-family: "Roboto";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+              }
+              .wallet-gained {
+                margin-left: 5px;
+                font-family: "Roboto";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+              }
+              .wallet-value {
+                margin-left: 5px;
+                font-family: "Roboto";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                text-decoration: underline;
+              }
+            }
+            .contents:hover {
+              background-color: #ddd;
+            }
+          }
+        }
+      }
+      .wallet-wrapper:hover .wallet-content {
+        display: block;
+        position: absolute;
+        width: 350px;
+        right: 100px;
+        top: 70px;
+      }
+      .navLinkBuy {
+        margin-right: 30px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 14px;
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+        cursor: pointer;
+      }
+      .navLinkAuth {
+        display: none;
+      }
+    }
+
+    .bell {
+      margin-right: 5px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    .bell:hover {
+      cursor: pointer;
+    }
+    .dropdown {
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        background: #ffffff;
+        box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 0px 10px 10px;
+        z-index: 1;
+        .content {
+          display: flex;
+          flex-direction: row;
+          // justify-content: center;
+          align-items: center;
+          padding: 10px 0px 10px 20px;
+          column-gap: 10px;
+          border-bottom: 0.4px solid rgba(0, 0, 0, 0.1);
+
+          > img {
+            width: 18px;
+            height: 18px;
+          }
+          .dropdown-name {
+            margin-left: 20px;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            text-align: left;
+          }
+        }
+        .content:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      width: 180px;
+      right: 0px;
+      top: 70.5px;
+    }
+  }
+  .navWrapperMobile {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbarWrapper {
+    padding: 10px;
+    .logo-wrapper {
+      .tribez-line {
+        display: none;
+      }
+    }
+    .navWrapper {
+      display: none;
+      top: 50px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-left: 20px;
+      .leftNav {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .searchBar {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          border: 1.3px solid #cccccc;
+          box-sizing: border-box;
+          border-radius: 25px;
+          padding: 5px 15px 5px 15px;
+          width: 100%;
+          height: 39px;
+          .searchInput {
+            outline: none;
+            border: none;
+          }
+          > img {
+            margin-left: 5%;
+          }
+        }
+      }
+
+      .rightNav {
+        height: 100%;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 20px;
+        margin-right: 0px !important;
+
+        .wallet {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          border: 2px solid #ff887e;
+          padding: 5px 15px 5px 15px;
+          border-radius: 48px;
+          > img {
+            width: 20px;
+            height: 19px;
+          }
+          .walletText {
+            margin-left: 5px;
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 17px;
+          }
+        }
+        .navLinkBuy {
+          margin-right: 30px;
+          font-family: "Roboto";
+          font-weight: 500;
+          font-size: 14px;
+          color: black;
+          text-decoration: none;
+          list-style-type: none;
+        }
+        .dropdown {
+          width: 10px;
+          height: 10px;
+        }
+        .dropdown-content {
+          display: none;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+        }
+        .dropdown:hover {
+          cursor: pointer;
+          .dropdown-content {
+            display: block;
+          }
+        }
+        .bell {
+          margin-right: 30px;
+          margin-left: 30px;
+        }
+        .bell:hover {
+          cursor: pointer;
+        }
+        .profile {
+        }
+        .profile:hover {
+          cursor: pointer;
+          .dropdown-content {
+            display: block;
+          }
+        }
+      }
+    }
+    .navWrapperMobile {
+      display: block;
+      width: 300px;
+      position: absolute;
+      top: 70px;
+      right: 0px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0px 1px 20px 3px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 0px 22px 24px;
+      z-index: 1;
+      .leftNav {
+        display: none;
+      }
+      .rightNav {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 0px;
+        text-align: center;
+        .dropdown-wallet {
+          width: 330px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 20px;
+          border-bottom: 0.5px solid #000000;
+          .wallet {
+            width: 150px;
+            height: 44px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ff887e;
+            border-radius: 48px;
+            margin-top: 10px;
+            column-gap: 10px;
+            > img {
+              width: 15px;
+              height: 17px;
+            }
+            .walletText {
+              margin-left: 5px;
+              font-family: "Roboto";
+              font-weight: 500;
+              font-size: 15px;
+            }
+          }
+          .wallet-content {
+            display: none;
+          }
+        }
+        .navLinkBuy {
+          font-family: "Roboto";
+          font-weight: 500;
+          font-size: 18px;
+          color: black;
+          text-decoration: none;
+          list-style-type: none;
+          margin-top: 10px;
+        }
+        .navLinkAuth {
+          font-family: "Roboto";
+          font-weight: 500;
+          font-size: 18px;
+          color: black;
+          text-decoration: none;
+          list-style-type: none;
+        }
+
+        .bell {
+          display: none;
+        }
+
+        .profile {
+          display: none;
+        }
+        .dropdown {
+          .dropdown-content {
+            .content {
+              padding-top: 20px;
+              .dropdown-icon {
+                display: none;
+              }
+              .dropdown-name {
+                font-family: "Roboto";
+                font-weight: 500;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .mobile-menu {
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 20px;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}

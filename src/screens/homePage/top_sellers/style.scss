@@ -1,0 +1,170 @@
+.topCollectionWrapper {
+  margin-top: 3vh;
+  .sellersHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .topSellers {
+      font-family: "Gilroy-Bold", sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+    }
+    .sellersDropdown {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      column-gap: 5px;
+      cursor: pointer;
+      .sellersYear {
+        color: rgba(255, 127, 98, 1);
+        font-family: "Gilroy-Bold", sans-serif;
+        font-weight: 800;
+        font-size: 36px;
+        margin-left: 10px;
+      }
+      .sellers-content {
+        display: none;
+      }
+    }
+    .sellersDropdown:hover .sellers-content {
+      display: block;
+      width: 80px;
+      position: absolute;
+      text-align: center;
+      color: #fff;
+      padding: 10px 0 0 0;
+      z-index: 1111;
+      background-color: white;
+      color: black;
+      margin-top: 50px;
+      box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.15);
+      > p {
+        cursor: pointer;
+      }
+      > p:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+  .sellExtraordinary {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px;
+  }
+  .sellersCardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 50px 25px 0 25px;
+    .cardWrapper {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .expandArrow {
+    display: none;
+  }
+  .uparrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topCollectionWrapper {
+    .sellersCardWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      margin: 0px;
+      .cardWrapper {
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .topCollectionWrapper {
+    margin-top: 5vh !important;
+    .sellersHeading {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .topSellers {
+        font-family: "Gilroy-Bold", sans-serif;
+        font-weight: 800;
+        font-size: 26px;
+      }
+      .sellersDropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 5px;
+        cursor: pointer;
+        .sellersYear {
+          color: rgba(255, 127, 98, 1);
+          font-family: "Gilroy-Bold" !important;
+          font-weight: 800;
+          font-size: 26px;
+          margin-left: 10px;
+        }
+        .sellers-content {
+          display: none;
+        }
+      }
+      .sellersDropdown:hover .sellers-content {
+        display: block;
+        width: 80px;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        padding: 10px 0 0 0;
+        z-index: 1111;
+        background-color: white;
+        color: black;
+        margin-top: 50px;
+        box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.15);
+        > p {
+          cursor: pointer;
+        }
+        > p:hover {
+          background-color: #f2f2f2;
+        }
+      }
+    }
+    .sellExtraordinary {
+      text-align: center;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 15px;
+      margin: 0px;
+    }
+    .sellersCardWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      .cardWrapper {
+      }
+    }
+    .expandArrow {
+      display: block;
+      text-align: center;
+    }
+    .uparrow {
+      display: block;
+      text-align: center;
+      > img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
